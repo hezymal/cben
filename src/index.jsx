@@ -1,8 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './style';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
-ReactDOM.render(
-  <h1>Hello, world!</h1>,
+import './style';
+import reducers from './reducers';
+import App from './components/App';
+
+const store = createStore(reducers, {
+  empty: {
+    text: 'Hello, Guys!',
+  },
+});
+
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 );
