@@ -1,8 +1,8 @@
 import React from 'react';
-import HelloWorldView from './HelloWorldView';
+import EventList from './EventList';
 
 const App = () => (
-  <HelloWorldView />
+  <EventList />
 );
 
 export default App;
