@@ -5,11 +5,20 @@ import Event from './Event';
 
 const EventListView = ({ events, onAddRandomItemClick }) => (
   <div className="event-list">
+    <header>
+      Список событий
+    </header>
     <section>
       {
-        events.map(function(event) {
-          return <Event key={event.id} id={event.id} location={event.location} date={event.date} />;
-        })
+        events.map(
+          event => 
+            <Event 
+              key={event.id} 
+              id={event.id} 
+              location={event.location} 
+              date={event.date}
+              fights={event.fights} />
+        )
       }
     </section>
     <footer>
@@ -23,6 +32,7 @@ EventListView.propTypes = {
     id: PropTypes.number.isRequired,
     location: PropTypes.string.isRequired,
     date: PropTypes.instanceOf(Date).isRequired,
+    fights: PropTypes.array.isRequired,
   }).isRequired).isRequired,
   onAddRandomItemClick: PropTypes.func.isRequired,
 };

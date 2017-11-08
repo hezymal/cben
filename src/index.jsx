@@ -13,11 +13,59 @@ const store = createStore(reducers, {
       id: 0,
       location: 'USA',
       date: new Date(2017, 12, 31),
+      fights: [
+        {
+          id: 0,
+          red: {
+            id: 0,
+            name: 'Hi-Tech',
+          },
+          blue: {
+            id: 1,
+            name: 'Rigo',
+          },
+        },
+        {
+          id: 1,
+          red: {
+            id: 2,
+            name: 'GGG',
+          },
+          blue: {
+            id: 3,
+            name: 'Canelo',
+          },
+        },
+      ],
     },
     {
       id: 1,
       location: 'USA',
       date: new Date(2018, 3, 31),
+      fights: [
+        {
+          id: 0,
+          red: {
+            id: 0,
+            name: 'Hi-Tech',
+          },
+          blue: {
+            id: 1,
+            name: 'Rigo',
+          },
+        },
+        {
+          id: 1,
+          red: {
+            id: 2,
+            name: 'GGG',
+          },
+          blue: {
+            id: 3,
+            name: 'Canelo',
+          },
+        },
+      ],
     },
   ],
 });
