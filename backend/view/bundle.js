@@ -600,7 +600,7 @@ module.exports = warning;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"EventList":"Styles__EventList___3zvs3","Event":"Styles__Event___3t3pQ","Fight":"Styles__Fight___6-Vgq","Boxer":"Styles__Boxer___OPZzU"};
+module.exports = {"EventList":"Styles__EventList___16PU_","Event":"Styles__Event___29r7M","Fight":"Styles__Fight___31neB","Boxer":"Styles__Boxer___2HF-r"};
 
 /***/ }),
 /* 9 */
