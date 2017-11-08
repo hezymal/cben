@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Styles from './Styles';
 
 const Boxer = ({ id, name }) => (
-  <span className="boxer-list__item">
+  <span className={Styles.Boxer}>
     {name}
   </span>
 );

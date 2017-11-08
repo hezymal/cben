@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+}
+
+.EventList {
+  background-color: #eee;
+}
+  .EventList > header {
+    font-size: 20px;
+    text-align: center;
+  }
+  .EventList > section {
+    display: flex;
+  }
+
+.Event {
+  margin: 12px 10px;
+}
+  .Event > header {
+    margin: 0 0 4px 0;
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .Event > section {
+    padding: 4px 0;
+  }
+
+.Fight {
+  padding: 3px 4px;
+  text-align: center;
+  cursor: pointer;
+}
+  .Fight:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+.Boxer {
+  font-weight: bold;
+}

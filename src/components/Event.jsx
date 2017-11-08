@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Fight from './Fight';
+import Styles from './Styles';
 
 const Event = ({ id, location, date, fights }) => (
-  <div className="event-list__item">
+  <div className={Styles.Event}>
     <header>
       {location} #{id}
     </header>

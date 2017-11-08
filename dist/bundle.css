@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+}
+
+.Styles__EventList___3zvs3 {
+  background-color: #eee;
+}
+  .Styles__EventList___3zvs3 > header {
+    font-size: 20px;
+    text-align: center;
+  }
+  .Styles__EventList___3zvs3 > section {
+    display: flex;
+  }
+
+.Styles__Event___3t3pQ {
+  margin: 12px 10px;
+}
+  .Styles__Event___3t3pQ > header {
+    margin: 0 0 4px 0;
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .Styles__Event___3t3pQ > section {
+    padding: 4px 0;
+  }
+
+.Styles__Fight___6-Vgq {
+  padding: 3px 4px;
+  text-align: center;
+  cursor: pointer;
+}
+  .Styles__Fight___6-Vgq:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+.Styles__Boxer___OPZzU {
+  font-weight: bold;
+}

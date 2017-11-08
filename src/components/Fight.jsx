@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Boxer from './Boxer';
+import Styles from './Styles';
 
 const Fight = ({ id, red, blue }) => (
-  <div className="fight-list__item">
+  <div className={Styles.Fight}>
     <Boxer id={red.id} name={red.name} />
     {" - "}
     <Boxer id={blue.id} name={blue.name} />

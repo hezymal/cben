@@ -2,9 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Event from './Event';
+import Styles from './Styles';
 
 const EventListView = ({ events, onAddRandomItemClick }) => (
-  <div className="event-list">
+  <div className={Styles.EventList}>
     <header>
       Список событий
     </header>
