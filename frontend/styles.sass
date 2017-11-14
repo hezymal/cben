@@ -1,0 +1,39 @@
+@import "~susy/sass/susy";
+
+body
+  margin: 0;
+  font-family: 'Didact Gothic', sans-serif
+
+.event-list
+  background-color: #eee
+
+  > header
+    text-align: center
+
+  > section
+
+    > .event
+      float: left
+      width: susy-span(4 of 12)
+      padding: gutter(of 12) / 2
+
+      > header
+        margin: 0 0 4px 0
+        padding: 4px 0
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3)
+        text-align: center
+
+      > div
+        > strong
+          font-weight: 400
+
+      > section
+        padding: 4px 0
+
+        > .fight
+          padding: 3px 4px
+          text-align: center
+          cursor: pointer
+
+          &:hover
+            text-decoration: underline

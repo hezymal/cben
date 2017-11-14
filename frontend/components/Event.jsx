@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Fight from './Fight';
-import Styles from './Styles';
+import styles from '../styles';
 
 const Event = ({ id, location, date, fights }) => (
-  <div className={Styles.Event}>
+  <div className={styles.event}>
     <header>
-      {location} #{id}
+      #{id} {location}
     </header>
     <div>
       <span>Дата: </span>
-      <strong>{date.toLocaleDateString()}</strong>
+      <strong>{date}</strong>
     </div>
     <div>
       <span>Кард: </span>
@@ -26,7 +26,7 @@ const Event = ({ id, location, date, fights }) => (
 Event.propTypes = {
   id: PropTypes.number.isRequired,
   location: PropTypes.string.isRequired,
-  date: PropTypes.instanceOf(Date).isRequired,
+  date: PropTypes.string.isRequired,
   fights: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
     red: PropTypes.object.isRequired,
